@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html" style="color: white; text-decoration: none;">SyntaxHouse</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="features.html">Feature</a></li>
+      </ul>
+      <a href="contact.html" class="register-btn">Register Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <form onsubmit="submitForm(); return false;">
+      <div class="form-box">
+        <label>Nama:<br><input type="text" name="nama" required></label><br><br>
+        <label>Email:<br><input type="email" name="email" required></label><br><br>
+        <label>No. Telepon:<br><input type="tel" name="telp" required></label><br><br>
+  
+        <fieldset style="border: none; padding: 1rem 0;">
+          <legend><strong>Minat Belajar:</strong></legend>
+          
+          <label><input type="checkbox" name="minat" value="Python"> Python</label><br>
+          <label><input type="checkbox" name="minat" value="HTML & CSS"> HTML & CSS</label><br>
+          <label><input type="checkbox" name="minat" value="PHP"> PHP</label><br>
+          <label><input type="checkbox" name="minat" value="Scratch"> Scratch</label>
+        
+        </fieldset>
+        
+        
+  
+        <button type="submit">Kirim</button>
+      </div>
+    </form>
+  </main>
+  
+  <script>
+    function submitForm() {
+      alert("Pesan anda terkirim! Tim Kami akan menghubungi anda 🤩");
+    }
+  </script>
+</body>
+</html>

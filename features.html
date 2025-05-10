@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Features</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('src/bag_about.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  padding: 1rem 2rem;
+  background-color: #1a1a2e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .register-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: none;
+  color: #ddd;
+  font-weight: bold;
+  white-space: nowrap;
+  font-style: normal;
+  margin-top: 0.5rem; 
+}
+
+    .features-container {
+      padding: 7rem 8% 4rem 8%;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .gallery img {
+      width: 180px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+
+    video {
+      margin-top: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .features-list {
+      text-align: left;
+      max-width: 550px;
+      margin: 3rem auto;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .features-list h2 {
+      color: white;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .features-list ul {
+      list-style-type: square;
+      color: #ccc;
+      padding-left: 1.5rem;
+    }
+
+    .features-list ul li {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+    }
+
+    .features-section {
+      margin-top: 4rem;
+    }
+
+    .features-section iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      margin-top: 1rem;
+      border-radius: 10px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html" style="color: #ddd; text-decoration: none; font-style: normal;">SyntaxCode</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="features.html">Feature</a></li>
+      </ul>
+      <a href="contact.html" class="register-btn">Register Now</a>
+    </nav>
+  </header>
+
+  <main class="features-container">
+    <section class="hero-text">
+      <h1>Our Key Features</h1>
+      <p>Berbagai fitur inovatif yang kami sediakan untuk meningkatkan kualitas pembelajaran digital Anda.</p>
+    </section>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="src/feature1.png" alt="Quiz">
+        <p class="caption">Kuis Interaktif</p>
+      </div>
+      <div class="gallery-item">
+        <img src="src/feature2.png" alt="Leaderboard">
+        <p class="caption">Leaderboard</p>
+      </div>
+      <div class="gallery-item">
+        <img src="src/feature3.png" alt="Diskusi">
+        <p class="caption">Forum Diskusi</p>
+      </div>
+    </div>
+    
+
+    <video width="600" height="375" controls>
+      <source src="src/video.mp4" type="video/mp4">
+    </video>
+
+    <section class="features-list">
+      <h2>Fitur Unggulan:</h2>
+      <ul>
+        <li>Kuis Interaktif dengan feedback langsung</li>
+        <li>Video pembelajaran HD oleh mentor ahli</li>
+        <li>Forum diskusi untuk setiap topik</li>
+        <li>Leaderboard untuk menumbuhkan motivasi belajar</li>
+        <li>Progress report yang bisa dipantau orang tua</li>
+        <li>Akses kelas kapan saja dan di mana saja</li>
+      </ul>
+    </section>
+
+    <section class="features-section">
+      <h2>Demo Fitur Kelas Interaktif</h2>
+      <iframe src="https://www.youtube.com/embed/QFLAuddS6qM" allowfullscreen></iframe>
+    </section>
+  </main>
+</body>
+</html>
